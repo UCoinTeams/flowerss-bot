@@ -98,7 +98,7 @@ func (t *RssUpdateTask) Start() {
 				}
 			}
 
-			time.Sleep(time.Duration(config.UpdateInterval) * time.Minute)
+			time.Sleep(time.Duration(config.UpdateInterval) * time.Second)
 		}
 	}()
 }
